@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PortConnect Add-in</title>
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script type="text/javascript" src="taskpane.js"></script>
+</head>
+<body style="padding: 15px; font-family: sans-serif;">
+    <h2>Draft B/L 照合ツール</h2>
+    
+    <div style="margin-bottom: 15px;">
+        <label for="file-input"><b>Draft B/L (PDF) を選択:</b></label><br>
+        <input type="file" id="file-input" accept="application/pdf" style="margin-top: 5px;" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <button id="check-btn" style="padding: 8px 15px; cursor: pointer;">S/IとB/Lを照合する</button>
+    </div>
+
+    <hr>
+
+    <div id="result-area" style="white-space: pre-wrap; margin-top: 10px; font-size: 13px;"></div>
+</body>
+</html>
